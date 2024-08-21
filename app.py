@@ -74,7 +74,7 @@ if st.button("Generate NewsLetter"):
             response = Agent.send_message(
                 agent_id=st.session_state.agent_id['agent_id'],
                 user_id="default_user",
-                session_id="harshit@lyzr.ai",
+                session_id="new_session",
                 message=query
             )
             # Display the generated email
