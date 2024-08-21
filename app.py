@@ -2,6 +2,7 @@ import os
 from lyzr_agent import LyzrAgent
 import streamlit as st
 from dotenv import load_dotenv
+from PIL import Image
 
 # Load environment variables
 load_dotenv()
@@ -15,6 +16,9 @@ st.set_page_config(
     initial_sidebar_state="auto",
     page_icon="lyzr-logo-cut.png",
 )
+
+image = Image.open("lyzr-logo.png")
+st.image(image, width=150)
 
 st.title("Lyzr Newsletter Generator")
 st.markdown("### Welcome to the Lyzr Newsletter Generator!")
